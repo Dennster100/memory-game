@@ -1,0 +1,143 @@
+*{
+  box-sizing: border-box;
+}
+
+html, body{
+  height: 100%;
+  width: 100%;
+}
+
+html{
+  background-color: aliceblue;
+}
+
+body{
+
+  display: flex;
+  justify-content: space-between;
+  flex-flow: column;
+}
+
+
+p{
+  display: flex;
+  align-self: center;
+}
+input{
+  margin-bottom: 50px;
+  display:flex;
+  align-self: center;
+}
+form{
+  display: flex;
+  flex-flow: column;
+
+}
+#game{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#game div {
+  border: 1px solid black;
+  width: 15%;
+  height: 200px;
+  margin: 10px;
+  border-radius: 10%;
+
+}
+
+h1{
+  display: flex;
+  height: fit-content;
+  align-self: center;
+  
+}
+
+/* .restart-button{
+    display: flex;
+    
+    align-self: center;
+    justify-self: center;
+} */
+#score-div{
+  display: flex;
+  flex-flow: column;
+}
+
+#score-div .button{
+  margin-bottom: 10px;
+
+}
+
+/* i found this button on a web site */
+/* https: //getcssscan.com/css-buttons-examples */
+.button {
+  /* i added some of my own styling to it to change its postioin in the window and size*/
+  display: flex;
+
+  align-self: center;
+  justify-self:center;
+
+
+
+
+  align-items: center;
+  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono", monospace;
+  height: 70px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 30px;
+  padding-right: 30px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s, transform .15s;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 30px;
+}
+
+.button:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.button:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
+/* end of button styles */
+
+.show-color{
+transition: transform 0.8s;
+transform: rotateY(180deg);
+background-color: #fff !important;
+
+}
+div{
+  transition: transform 0.8s;
+}
+
+
+
+
+#z-12{
+  color: skyblue;
+}
+
