@@ -122,7 +122,9 @@ function handleCardClick(event) {
     }
     if (gameCounter >= Number(numberSets.value)) {
       let temp = localStorage.getItem('score');
-      if (Number(temp) > gameScore) {
+      if (localStorage.getItem('score') === null) {
+        localStorage.setItem('score', gameScore);
+      } else if (Number(temp) > gameScore) {
         localStorage.setItem('score', gameScore);
       }
       
